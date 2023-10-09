@@ -1,0 +1,7 @@
+
+<div *ngFor="let item of listInvoice , let i = index">
+    <ul>
+        <li>Facture : {{i+1}}<a  [routerLink]="['/invoice', item.idFacture, item.active]">Details</a>
+        </li>
+    </ul>
+</div>
